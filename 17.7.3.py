@@ -1,0 +1,13 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+print("")
+deposit = input("Введите сумму депозита:")
+deposit = float (deposit)
+a = int(5.6*deposit/100)
+b = int(5.9*deposit/100)
+c = int(4.28*deposit/100)
+d = int(4.0*deposit/100)
+print("")
+print(f'Годовой процент: {a, b, c, d}')
+print("")
+money = max(a, b, c, d)
+print('Максимальная сумма, которую можно заработать:', money)
